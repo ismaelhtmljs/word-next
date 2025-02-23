@@ -7,11 +7,34 @@
   --foreground: #171717;
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
   }
+} */
+
+.marginCenter {
+  margin: 0 auto;
+}
+
+::selection{
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.sp-s {
+  letter-spacing: 2px;
+  word-spacing: 5px;
+}
+
+.roboto {
+  font-family: "Roboto", 'Roboto' , Arial, sans-serif;;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
 }
 
 body {

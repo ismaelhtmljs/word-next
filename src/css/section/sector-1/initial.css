@@ -1,0 +1,26 @@
+.img-s{
+    width: 200vh;
+    height: 663.95px;
+    object-fit: cover;
+}
+
+.bg-moded-initial{
+    background-color: #045174;
+    color: #ceeefd;
+}
+
+.bg-animated {
+    animation: txt-animated-initial 7s ease-in-out infinite alternate;
+}
+
+@keyframes txt-animated-initial {
+    0% {
+        color: #ceeefd;
+    }
+    50% {
+        color: black;
+    }
+    100% {
+        color: #ceeefd;
+    }
+}
