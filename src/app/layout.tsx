@@ -28,7 +28,7 @@ export default function RootLayout({
         <link rel="shortcut icon" href="/svg/logo.svg" type="image/x-icon" />
         <meta name="google-site-verification" content="mCe3iHd8LHtdqRk7JCFQAk2boQ17dVLVAWNwk64m2f8" />
         {/* Google Analytics */}
-        <script async src={`https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX`} />
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-01F58R66Z6"></script>
         <script dangerouslySetInnerHTML={{
           __html: `
       window.dataLayer = window.dataLayer || [];
