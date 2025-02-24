@@ -26,6 +26,7 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <link rel="shortcut icon" href="/svg/logo.svg" type="image/x-icon" />
+        <meta name="google-site-verification" content="mCe3iHd8LHtdqRk7JCFQAk2boQ17dVLVAWNwk64m2f8" />
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
