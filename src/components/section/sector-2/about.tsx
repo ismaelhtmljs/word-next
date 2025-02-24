@@ -2,7 +2,7 @@ import '@/css/section/sector-2/about.css'
 
 export default function About_US() {
     return (
-        <div className='mt-[8%] responsive-about' id='AboutUs'>
+        <div className='mt-[8%] responsive-about' id='AboutUs' translate="no">
             <div>
                 <div className='g-d p-14 reponsive-area-about'>
                     <div className='flex flex-col'>

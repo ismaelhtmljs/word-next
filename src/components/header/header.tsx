@@ -20,7 +20,7 @@ function Header() {
 
     return (
         <>
-            <header className="p-4 bg-moded text-white sticky top-0 z-50">
+            <header className="p-4 bg-moded text-white sticky top-0 z-50" translate="no">
                 <div className="flex items-center justify-between marginCenter responsive-header">
                     <div className="hidden responsive-menu-toggle">
                         <IoMenu className="w-[35px] h-auto responsive-menu" onClick={ToggleMenu}/>

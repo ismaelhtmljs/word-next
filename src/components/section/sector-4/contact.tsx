@@ -8,7 +8,7 @@ import Formulario from './form/formulario';
 
 export default function Contact() {
     return (
-        <div className='bg-gray-200 p-[35px]' id='contact'>
+        <div className='bg-gray-200 p-[35px]' id='contact' translate="no">
             <div className='flex flex-col justify-center items-center gap-3'>
                 <div className='flex flex-col gap-4 text-center'>
                     <div>

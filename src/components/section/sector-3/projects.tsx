@@ -4,7 +4,7 @@ import '@/css/section/sector-3/projects.css'
 
 export default function Projects() {
     return (
-        <div id="Projects">
+        <div id="Projects" translate="no">
             <div>
                 <div className="text-center">
                     <h2 className="text-[1.953em] palanquin-s">PROJECTS DONE</h2>

@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "WordNext",
+  title: "WORDNEXT BLOG",
   description: "Crea tu página web o blog con WordNext, una página donde va a poder hacer su página web o blog sin tener que programar usted mismo ni preocuparse por la memoria de su página web",
 };
 
@@ -39,6 +39,7 @@ export default function RootLayout({
       });
     `}}
         />
+        <meta name="google" content="notranslate"/>
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}

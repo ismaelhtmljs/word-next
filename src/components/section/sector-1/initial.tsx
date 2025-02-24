@@ -2,7 +2,7 @@ import '@/css/section/sector-1/initial.css'
 
 export default function Initial(){
     return(
-        <div className="flex bg-slate-500 responsive-section" id='Home'>
+        <div className="flex bg-slate-500 responsive-section" id='Home' translate="no">
             <div className="Fondo_initial">
                 <img src="/images/Image_1.jpg" alt="imagen de codigo creando una pagina web" className="img-s"/>
             </div>

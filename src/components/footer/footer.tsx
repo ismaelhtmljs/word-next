@@ -2,7 +2,7 @@ import '@/css/footer/footer.css'
 
 function Footer() {
     return (
-        <footer className="p-10 bg-footer">
+        <footer className="p-10 bg-footer" translate="no">
             <div className="text-center flex flex-col gap-7 text-[14px]">
                 <div className="flex justify-center gap-3">
                     <a href="#Home" className='hover:text-cyan-400'>Home</a>
