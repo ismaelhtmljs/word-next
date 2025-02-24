@@ -28,6 +28,23 @@
   word-spacing: 5px;
 }
 
+html{
+  scroll-behavior: smooth;
+  scroll-padding: 85px;
+}
+
+.palanquin {
+  font-family: "Palanquin",Arial, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.palanquin-s {
+  font-family: "Palanquin",Arial, sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
 .roboto {
   font-family: "Roboto", 'Roboto' , Arial, sans-serif;;
   font-optical-sizing: auto;

@@ -1,0 +1,21 @@
+.hr-moded-sector-2{
+    background-color: #045174;
+    height: 5px;
+    border: none;
+    width: 55%;
+}
+
+.l-h-sector-2{
+    line-height: 1.25;
+}
+
+.g-d{
+    display: flex;
+    align-items: center;
+    gap: 48px;
+}
+
+.size-img-sector-2{
+    width: 350vh;
+    height: auto;
+}

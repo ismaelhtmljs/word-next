@@ -1,5 +1,7 @@
 import Header from "@/components/header/header"
 import Main from "@/components/section/main"
+import Footer from "@/components/footer/footer"
+import '@/css/media-queri/style.css'
 
 export default function Home(){
   return(
@@ -8,6 +10,7 @@ export default function Home(){
         <div>
           <Header/>
           <Main/>
+          <Footer/>
         </div>
       </div>
     </div>

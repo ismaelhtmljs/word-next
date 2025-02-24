@@ -1,0 +1,53 @@
+.nav-res {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #181818;
+    color: #ffffff;
+    justify-content: stretch;
+    padding: 15px;
+    flex-direction: column;
+    overflow: hidden;
+    z-index: 9999;
+
+    /* Oculto al inicio */
+    transform: translateY(-100%);
+    opacity: 0;
+    pointer-events: none;
+
+    /* Animación suave */
+    transition: transform 0.4s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+/* Cuando el menú está activo */
+.nav-res-active {
+    display: flex; /* Se muestra */
+    transform: translateY(0); /* Baja suavemente */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #181818;
+    color: #ffffff;
+    transition: transform 0.4s ease-in-out, opacity 0.3s ease-in-out;
+    justify-content: stretch;
+    padding: 15px;
+    flex-direction: column;
+    overflow: hidden;
+    z-index: 9999;
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.responsive-list-nav{
+    flex-direction: column;
+}
+
+.close-menu-size{
+    width: 40px;
+    height: auto;
+}

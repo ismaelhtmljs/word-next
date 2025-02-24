@@ -1,0 +1,13 @@
+.hover-animation-bton-sector-2:hover{
+    transition: ease-in-out .1s;
+    filter: drop-shadow(2px 4px 6px #808080);
+}
+
+.b-img-moded{
+    border: 1px solid #000000;
+}
+
+#Projects{
+    margin-top: 75px;
+    margin-bottom: 75px;
+}
