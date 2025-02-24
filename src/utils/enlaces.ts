@@ -23,3 +23,7 @@ export const github_project_2_repo = () => {
 export const Instagram_enlace = () => {
     window.open('https://www.instagram.com/ismaelxd74/?hl=es')
 }
+
+export const Instagram_enlace_jibaja = () => {
+    window.open('https://www.instagram.com/mathiasx13/?hl=es')
+}
