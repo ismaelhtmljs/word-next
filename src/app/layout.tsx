@@ -13,8 +13,15 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "WORDNEXT BLOG",
+  title: "WordNext Blog",
   description: "Crea tu página web o blog con WordNext, una página donde va a poder hacer su página web o blog sin tener que programar usted mismo ni preocuparse por la memoria de su página web",
+  openGraph:{
+    title: "WordNext Blog - Desarrollo tu página web fácil y rápido",
+    description: "WordNext te permite hacer que personas programen tu páginas web y blogs sin código. Fácil, rápido y sin complicaciones.",
+    url: 'https://word-next-seven.vercel.app/',
+    siteName: "WordNext Blog",
+    type: 'website'
+  }
 };
 
 export default function RootLayout({
