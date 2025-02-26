@@ -1,0 +1,17 @@
+.m-animated-opacity {
+    animation: mainAnimated .5s ease-in-out;
+}
+
+.bg-reservation-mod {
+    background-color: rgb(255,215,239,1);
+}
+
+@keyframes mainAnimated {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}

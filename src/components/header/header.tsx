@@ -32,10 +32,11 @@ function Header() {
                     <div className="responsive-navbar">
                         <nav>
                             <ol className="flex list-none gap-3">
-                                <li><Link href="#Home">HOME</Link></li>
-                                <li><Link href="#AboutUs">ABOUT US</Link></li>
-                                <li><Link href="#Projects">PROJECTS</Link></li>
-                                <li><Link href="#contact">CONTACT</Link></li>
+                                <li><a href="/#Home">HOME</a></li>
+                                <li><a href="/#AboutUs">ABOUT US</a></li>
+                                <li><a href="/#Projects">PROJECTS</a></li>
+                                <li><a href="/#reservation">RESERVATION</a></li>
+                                <li><a href="/#contact">CONTACT</a></li>
                             </ol>
                         </nav>
                     </div>
@@ -48,10 +49,11 @@ function Header() {
                 <div className="marginCenter">
                     <nav>
                         <ol className="flex list-none gap-3 responsive-list-nav">
-                            <li><Link href="#Home">HOME</Link></li>
-                            <li><Link href="#AboutUs">ABOUT US</Link></li>
-                            <li><Link href="#Projects">PROJECTS</Link></li>
-                            <li><Link href="#contact">CONTACT</Link></li>
+                            <li><a href="/#Home">HOME</a></li>
+                            <li><a href="/#AboutUs">ABOUT US</a></li>
+                            <li><a href="/#Projects">PROJECTS</a></li>
+                            <li><a href="/#reservation">RESERVATION</a></li>
+                            <li><a href="/#contact">CONTACT</a></li>
                         </ol>
                     </nav>
                 </div>

@@ -1,167 +1,224 @@
-@media only screen and (min-width: 238px) and (max-width: 369px){
-    .responsive-section{
+@media only screen and (min-width: 238px) and (max-width: 369px) {
+    .responsive-section {
         flex-direction: column-reverse !important;
     }
 
-    .media-text{
+    .media-text {
         font-size: 59px;
     }
 
-    .responsive-about{
+    .responsive-about {
         height: auto;
     }
 
-    .reponsive-area-about{
+    .reponsive-area-about {
         flex-direction: column;
     }
 
-    .text-size-movil{
+    .text-size-movil {
         font-size: 39px;
     }
 
-    .responsive-rounded{
+    .responsive-rounded {
         border-radius: 0px !important;
     }
 
-    .reponsive-flex{
+    .reponsive-flex {
         flex-direction: column !important;
     }
 
-    .reponsive-area{
+    .reponsive-area {
         flex-direction: column !important;
         align-content: center !important;
     }
 
-    .responsive-size{
+    .responsive-size {
         width: 100% !important;
     }
 
-    .responsive-navbar{
+    .responsive-navbar {
         display: none !important;
     }
 
-    .responsive-header{
+    .responsive-header {
         justify-content: stretch !important;
     }
 
-    .responsive-menu-toggle{
+    .responsive-menu-toggle {
         display: block !important;
     }
 
-    #Projects{
+    #Projects {
         margin-top: 35px !important;
         margin-bottom: 35px !important;
     }
-}
-@media only screen and (min-width: 360px) and (max-width: 424px){
-    .responsive-section{
-        flex-direction: column-reverse !important;
-    }
 
-    .responsive-about{
-        height: auto;
-    }
-
-    .reponsive-area-about{
-        flex-direction: column;
-    }
-
-    .responsive-rounded{
-        border-radius: 0px !important;
-    }
-
-    .reponsive-flex{
-        flex-direction: column !important;
-    }
-
-    .reponsive-area{
-        flex-direction: column !important;
-        align-content: center !important;
-    }
-
-    .responsive-size{
-        width: 100% !important;
-    }
-
-    .responsive-navbar{
-        display: none !important;
-    }
-
-    .responsive-header{
-        justify-content: stretch !important;
-    }
-
-    .responsive-menu-toggle{
-        display: block !important;
-    }
-
-    #Projects{
-        margin-top: 35px !important;
-        margin-bottom: 35px !important;
-    }
-}
-@media only screen and (min-width: 425px) and (max-width: 700px){
-    .responsive-section{
+    .responsive-reservation {
         flex-direction: column-reverse;
     }
 
-    .responsive-about{
+    .list-footer-responsive {
+        flex-direction: column;
+    }
+
+    .text-size-responsive-footer {
+        font-size: 14px !important;
+    }
+
+    .w-size-responsive-reservation{
+        width: auto;
+    }
+}
+
+@media only screen and (min-width: 360px) and (max-width: 424px) {
+    .responsive-section {
+        flex-direction: column-reverse !important;
+    }
+
+    .responsive-about {
         height: auto;
     }
 
-    .reponsive-area-about{
+    .reponsive-area-about {
         flex-direction: column;
     }
 
-    .responsive-rounded{
+    .responsive-rounded {
+        border-radius: 0px !important;
+    }
+
+    .reponsive-flex {
+        flex-direction: column !important;
+    }
+
+    .reponsive-area {
+        flex-direction: column !important;
+        align-content: center !important;
+    }
+
+    .responsive-size {
+        width: 100% !important;
+    }
+
+    .responsive-navbar {
+        display: none !important;
+    }
+
+    .responsive-header {
+        justify-content: stretch !important;
+    }
+
+    .responsive-menu-toggle {
+        display: block !important;
+    }
+
+    #Projects {
+        margin-top: 35px !important;
+        margin-bottom: 35px !important;
+    }
+
+    .responsive-reservation {
+        flex-direction: column-reverse;
+    }
+
+    .list-footer-responsive {
+        flex-direction: column;
+    }
+
+    .w-size-responsive-reservation{
+        width: auto;
+    }
+}
+
+@media only screen and (min-width: 425px) and (max-width: 700px) {
+    .responsive-section {
+        flex-direction: column-reverse;
+    }
+
+    .responsive-about {
+        height: auto;
+    }
+
+    .reponsive-area-about {
+        flex-direction: column;
+    }
+
+    .responsive-rounded {
         border-radius: 0px;
     }
 
-    .reponsive-flex{
+    .reponsive-flex {
         flex-direction: column;
     }
 
-    .reponsive-area{
+    .reponsive-area {
         flex-direction: column;
         align-content: center;
     }
 
-    .responsive-size{
+    .responsive-size {
         width: 100%;
     }
 
-    .responsive-navbar{
+    .responsive-navbar {
         display: none;
     }
 
-    .responsive-header{
+    .responsive-header {
         justify-content: stretch;
     }
 
-    .responsive-menu-toggle{
+    .responsive-menu-toggle {
         display: block;
     }
 
-    #Projects{
+    #Projects {
         margin-top: 35px;
         margin-bottom: 35px;
     }
+
+    .responsive-reservation {
+        flex-direction: column-reverse;
+    }
+
+    .list-footer-responsive {
+        flex-direction: column;
+    }
+
+    .w-size-responsive-reservation{
+        width: auto;
+    }
 }
-@media only screen and (min-width: 701px) and (max-width: 750px){
-    .media-text{
+
+@media only screen and (min-width: 701px) and (max-width: 750px) {
+    .media-text {
         font-size: 59px;
     }
 
-    #Projects{
+    #Projects {
         margin-top: 75px;
         margin-bottom: 75px;
     }
 
-    .responsive-menu{
+    .responsive-menu {
         display: none;
     }
 
-    .media-text_des{
+    .media-text_des {
         font-size: 20px;
+    }
+
+    .responsive-reservation {
+        flex-direction: column-reverse;
+    }
+
+    .w-size-responsive-reservation{
+        width: auto;
+    }
+}
+
+@media only screen and (min-width: 750px) and (max-width: 1011px) {
+    .responsive-reservation {
+        flex-direction: column-reverse;
     }
 }

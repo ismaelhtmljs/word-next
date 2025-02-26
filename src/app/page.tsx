@@ -1,5 +1,5 @@
-import Header from "@/components/header/header"
 import Main from "@/components/section/main"
+import Header from "@/components/header/header"
 import Footer from "@/components/footer/footer"
 import '@/css/media-queri/style.css'
 
