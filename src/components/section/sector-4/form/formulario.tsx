@@ -1,7 +1,5 @@
 "use client"
 
-import React from "react"
-
 function Formulario(){
     const EnviarContacto = (event: React.FormEvent<HTMLFormElement>) => {
         event.preventDefault();

@@ -24,7 +24,7 @@ function MainReservation(){
         window.location.href = `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
     }
     return(
-        <main className="m-animated-opacity p-4 flex justify-center">
+        <main className="m-animated-opacity p-4 flex justify-center" translate="no">
             <div className="bg-reservation-mod h-full w-[50%] w-size-responsive-reservation">
                 <div className="p-4">
                     <form onSubmit={HandleMailto} method="post" className="flex flex-col gap-5">

@@ -13,9 +13,11 @@ const eslintConfig = [
   ...compat.extends("next/core-web-vitals", "next/typescript"),
   {
     rules: {
-      "react/no-unescaped-entities": "off", // Permite caracteres sin escapar como "
+      "react/no-unescaped-entities": "off",
+      "@next/next/no-html-link-for-pages": "off", // ⚠️ Desactiva advertencias de <a>
+      "@next/next/no-img-element": "off", // ⚠️ Permite <img> en lugar de <Image>
     },
-  }
+  },
 ];
 
 export default eslintConfig;

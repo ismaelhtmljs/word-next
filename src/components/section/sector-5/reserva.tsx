@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 export default function Reservation(){
     return(
-        <div className="bg-reservation p-6" id='reservation'>
+        <div className="bg-reservation p-6" id='reservation' translate='no'>
             <div className='flex gap-4 items-center responsive-reservation '>
                 <div className='flex flex-col gap-5 w-[85%]'>
                     <div className='text-center'>
