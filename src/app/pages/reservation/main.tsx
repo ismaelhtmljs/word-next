@@ -1,7 +1,13 @@
 "use client"
+import { useState } from "react";
+
 function MainReservation(){
-    const HandleMailto = (event: React.FormEvent<HTMLFormElement>) => {
+    const [loading, setloading] = useState(false)
+    const [debugTXT, setDebugTXT] = useState("")
+
+    const HandleMailto = async(event: React.FormEvent<HTMLFormElement>) => {
         event.preventDefault();
+        setloading(true)
 
         // para el envio del formulario
         const form = event.currentTarget;
@@ -11,17 +17,22 @@ function MainReservation(){
         const qr_Option = (form.elements.namedItem('codigo_QR') as HTMLInputElement)?.value || 'no seleccionado';
         const Type_web = (form.elements.namedItem('type_web') as HTMLInputElement)?.value || 'sitio web';
 
-        // diseño del tipo de envio de formulario al correro gmail
-        const email = "ismaelgq.88@gmail.com";
-        const subject = "reserva de creación de sitio web";
-        const body = `Tipo de sitio web : ${Type_web} 
-                    \n Nombre del sitio web : ${nameWeb}
-                    \n Nombre del Cliente : ${nameClient}
-                    \n Correo del cliente : ${correo} 
-                    \n Codigo QR : ${qr_Option}`;
-        
-        // Crear el enlace de mailto
-        window.location.href = `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+        const reponse_reservation = await fetch("/api/sendreservation",{
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+            },
+            body: JSON.stringify({n_web: nameWeb, n_client: nameClient, email_client: correo, option_qr: qr_Option, typ_web: Type_web})
+        })
+
+        if (reponse_reservation.ok) {
+            setDebugTXT("Se envio la reserva con éxito")
+        }
+        else{
+            setDebugTXT("hubo un problema al enviar la reserva")
+        }
+
+        setloading(false)
     }
     return(
         <main className="m-animated-opacity p-4 flex justify-center" translate="no">
@@ -55,7 +66,10 @@ function MainReservation(){
                                 <input type="radio" name="codigo_QR" value="no"/><p>No</p>
                             </div>
                         </div>
-                        <input type="submit" value="Enviar la reserva" className="bg-green-300 p-input p-2 text-center cursor-pointer"/>
+                        <button type="submit" value="Enviar la reserva" className="bg-green-300 p-input p-2 text-center cursor-pointer">
+                            {loading ? "enviando..." : "enviar"}
+                        </button>
+                        {debugTXT && <p className="text-center palanquin">{debugTXT}</p>}
                     </form>
                 </div>
             </div>

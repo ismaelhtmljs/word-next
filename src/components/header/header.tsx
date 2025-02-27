@@ -2,6 +2,7 @@
 import { useState } from "react"
 import { IoMenu } from "react-icons/io5";
 import { IoCloseOutline } from "react-icons/io5";
+import DarkMode from "@/utils/darkmode";
 import '@/css/header/nav.css'
 import '@/css/header/header.css'
 
@@ -36,6 +37,7 @@ function Header() {
                                 <li><a href="/#Projects">PROJECTS</a></li>
                                 <li><a href="/#reservation">RESERVATION</a></li>
                                 <li><a href="/#contact">CONTACT</a></li>
+                                <DarkMode/>
                             </ol>
                         </nav>
                     </div>
