@@ -26,7 +26,7 @@ export default function Contact() {
                         </div>
                         <div className='items-center flex gap-2 justify-center'>
                             <FaInstagram className='text-color' />
-                            <a onClick={Instagram_enlace} className='text-color hover:underline text-size-responsive-footer'>Ismaelxd74</a>
+                            <a onClick={Instagram_enlace} className='text-color hover:underline text-size-responsive-footer cursor-pointer'>Ismaelxd74</a>
                         </div>
                         <div className='items-center flex gap-2 justify-center'>
                             <FaPhone className='text-color' />
@@ -34,7 +34,7 @@ export default function Contact() {
                         </div>
                         <div className='items-center flex gap-2 justify-center'>
                             <FaInstagram className='text-color' />
-                            <a onClick={Instagram_enlace_jibaja} className='text-color hover:underline text-size-responsive-footer'>mathiasx13</a>
+                            <a onClick={Instagram_enlace_jibaja} className='text-color hover:underline text-size-responsive-footer cursor-pointer'>mathiasx13</a>
                         </div>
                     </div>
                 </div>
