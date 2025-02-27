@@ -1,10 +1,12 @@
 "use client"
 import { useState } from "react";
+import { TbXboxXFilled } from "react-icons/tb";
 
 function Formulario(){
     const [loading, setlodaing] = useState(false)
     const [mensaje,setMensaje] = useState("")
-    
+    const [isDEBUGactive, setDEBUGactive] = useState(false)
+
     const EnviarContacto = async(event: React.FormEvent<HTMLFormElement>) => {
         event.preventDefault();
         setlodaing(true)
@@ -25,6 +27,7 @@ function Formulario(){
 
         if (response.ok) {
             setMensaje("Se envio el formulario")
+            setDEBUGactive(!isDEBUGactive)
             form.reset()
         }
         else{
@@ -33,6 +36,11 @@ function Formulario(){
 
         setlodaing(false)
     }
+
+    const closeDEBUG = () => {
+        setDEBUGactive(false)
+    }
+
     return(
         <div className="w-full" translate="no">
             <div>
@@ -43,7 +51,7 @@ function Formulario(){
                     <button type="submit" value="Enviar" className="bg-green-300 p-input cursor-pointer">
                         {loading ? "Enviando..." : "Enviar"}
                     </button>
-                    {mensaje && <p className="text-center palanquin">{mensaje}</p>}
+                    {mensaje && <p className={`text-center palanquin text-2xl txt-responsive-devbug${isDEBUGactive ? "-active" : ''}`}>{mensaje}<TbXboxXFilled onClick={closeDEBUG} className="text-red-500"/></p>}
                 </form>
             </div>
         </div>

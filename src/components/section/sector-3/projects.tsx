@@ -25,7 +25,7 @@ export default function Projects() {
                             <img src="/images/projects/Project_2.png" alt="Imagen del segundo proyecto" className="rounded-2xl b-img-moded"/>
                         </div>
                         <div className="pl-4 text-xl">
-                            <p>Proyecto web de la página de Abstract</p>
+                            <p>Proyecto web de la página de <strong><em>Abstract</em></strong></p>
                             <p>Enlace : <span className="cursor-pointer bg-yellow-300 p-1 rounded-md hover-animation-bton-sector-2" onClick={github_project_2}>Abstract Web</span></p>
                             <p>Repositorio de Github : <span className="cursor-pointer bg-yellow-300 p-1 rounded-md hover-animation-bton-sector-2" onClick={github_project_2_repo}>Github</span></p>
                         </div>

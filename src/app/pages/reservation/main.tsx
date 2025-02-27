@@ -1,9 +1,11 @@
 "use client"
 import { useState } from "react";
+import { TbXboxXFilled } from "react-icons/tb";
 
 function MainReservation(){
     const [loading, setloading] = useState(false)
     const [debugTXT, setDebugTXT] = useState("")
+    const [isDEBUGactive, setDEBUGactive] = useState(false)
 
     const HandleMailto = async(event: React.FormEvent<HTMLFormElement>) => {
         event.preventDefault();
@@ -27,6 +29,7 @@ function MainReservation(){
 
         if (reponse_reservation.ok) {
             setDebugTXT("Se envio la reserva con éxito")
+            setDEBUGactive(!isDEBUGactive)
         }
         else{
             setDebugTXT("hubo un problema al enviar la reserva")
@@ -34,6 +37,11 @@ function MainReservation(){
 
         setloading(false)
     }
+
+    const closeDEBUG = () => {
+        setDEBUGactive(false)
+    }
+    
     return(
         <main className="m-animated-opacity p-4 flex justify-center" translate="no">
             <div className="bg-reservation-mod h-full w-[50%] w-size-responsive-reservation">
@@ -69,7 +77,7 @@ function MainReservation(){
                         <button type="submit" value="Enviar la reserva" className="bg-green-300 p-input p-2 text-center cursor-pointer">
                             {loading ? "enviando..." : "enviar"}
                         </button>
-                        {debugTXT && <p className="text-center palanquin">{debugTXT}</p>}
+                        {debugTXT && <p className={`text-center palanquin text-2xl txt-responsive-devbug${isDEBUGactive ? "-active" : ''}`}>{debugTXT}<TbXboxXFilled onClick={closeDEBUG} className="text-red-500"/></p>}
                     </form>
                 </div>
             </div>
