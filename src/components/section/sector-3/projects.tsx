@@ -15,7 +15,7 @@ export default function Projects() {
                             <img src="/images/projects/Project_1.png" alt="Imagen del primer proyecto" className="rounded-2xl"/>
                         </div>
                         <div className="pl-4 text-xl">
-                            <p>Proyecto web de la página de <em><strong>Project IDK</strong></em></p>
+                            <p>Proyecto web de la página de <em><strong>Project IDX</strong></em></p>
                             <p>Enlace : <span className="cursor-pointer bg-yellow-300 p-1 rounded-md hover-animation-bton-sector-2" onClick={github_project_1}>Project IDK</span></p>
                             <p>Repositorio de Github : <span className="cursor-pointer bg-yellow-300 p-1 rounded-md hover-animation-bton-sector-2" onClick={github_project_1_repo}>Github</span></p>
                         </div>
