@@ -9,6 +9,7 @@ function Footer() {
                     <a href="/#AboutUs" className='hover:text-cyan-400'>ABOUT US</a>
                     <a href="/#Projects" className='hover:text-cyan-400'>PROJECTS</a>
                     <a href="/#reservation" className='hover:text-cyan-400'>RESERVATION</a>
+                    <a href="/#Report_Error" className='hover:text-cyan-400'>TECHNICAL SUPPORT</a>
                     <a href="/#contact" className='hover:text-cyan-400'>CONTACT</a>
                 </div>
                 <div className='flex flex-col gap-2'>

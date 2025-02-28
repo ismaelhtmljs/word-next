@@ -1,0 +1,14 @@
+.bg-moded-report-error{
+    background-color: #fc8947;
+    width: 100%;
+    height: 100%;
+}
+
+#Report_Error{
+    margin-top: 75px;
+    margin-bottom: 75px;
+}
+
+.text-moded-bton-report-error{
+    letter-spacing: 2px;
+}

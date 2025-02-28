@@ -35,6 +35,7 @@ function Header() {
                                 <li><a href="/#AboutUs">ABOUT US</a></li>
                                 <li><a href="/#Projects">PROJECTS</a></li>
                                 <li><a href="/#reservation">RESERVATION</a></li>
+                                <li><a href="/#Report_Error">TECHNICAL SUPPORT</a></li>
                                 <li><a href="/#contact">CONTACT</a></li>
                             </ol>
                         </nav>
@@ -52,6 +53,7 @@ function Header() {
                             <li><a href="/#AboutUs">ABOUT US</a></li>
                             <li><a href="/#Projects">PROJECTS</a></li>
                             <li><a href="/#reservation">RESERVATION</a></li>
+                            <li><a href="/#Report_Error">TECHNICAL SUPPORT</a></li>
                             <li><a href="/#contact">CONTACT</a></li>
                         </ol>
                     </nav>
