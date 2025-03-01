@@ -44,27 +44,27 @@ function MainReservation(){
     
     return(
         <main className="m-animated-opacity p-4 flex justify-center" translate="no">
-            <div className="bg-reservation-mod h-full w-[50%] w-size-responsive-reservation">
+            <div className="bg-reservation-mod h-full w-[50%] w-size-responsive-reservation rounded-xl">
                 <div className="p-4">
                     <form onSubmit={HandleMailto} method="post" className="flex flex-col gap-5">
                         <div className="w-full flex flex-col gap-2">
                             <label className="text-xl text-center"><strong>Tipo de sitio web</strong>
-                                <input type="text" name="type_web" placeholder="" className="p-2 w-full" required/>
+                                <input type="text" name="type_web" placeholder="" className="p-2 w-full rounded-md" required/>
                             </label>
                         </div>
                         <div className="w-full flex flex-col gap-2">
                             <label className="text-xl text-center"><strong>Nombre de su sitio web : </strong>
-                                <input type="text" name="name_web" placeholder="" className="p-2 w-full" required/>
+                                <input type="text" name="name_web" placeholder="" className="p-2 w-full rounded-md" required/>
                             </label>
                         </div>
                         <div className="w-full flex flex-col gap-2">
                             <label className="text-xl text-center"><strong>Su Nombre : </strong>
-                                <input type="text" name="name_client" placeholder="" className="p-2 w-full" required/>
+                                <input type="text" name="name_client" placeholder="" className="p-2 w-full rounded-md" required/>
                             </label>
                         </div>
                         <div className="w-full flex flex-col gap-2">
                             <label className="text-xl text-center"><strong>La dirección de su correro : </strong>
-                                <input type="email" name="correo" className="p-2 w-full" required/>
+                                <input type="email" name="correo" className="p-2 w-full rounded-md" required/>
                             </label>
                         </div>
                         <div className="w-full flex flex-col gap-2 items-center">
@@ -74,7 +74,7 @@ function MainReservation(){
                                 <input type="radio" name="codigo_QR" value="no"/><p>No</p>
                             </div>
                         </div>
-                        <button type="submit" value="Enviar la reserva" className="bg-green-300 p-input p-2 text-center cursor-pointer">
+                        <button type="submit" value="Enviar la reserva" className="bg-green-300 p-input p-2 text-center cursor-pointer rounded-xl">
                             {loading ? "enviando..." : "enviar"}
                         </button>
                         {debugTXT && <p className={`text-center palanquin text-2xl txt-responsive-devbug${isDEBUGactive ? "-active" : ''}`}>{debugTXT}<TbXboxXFilled onClick={closeDEBUG} className="text-red-500"/></p>}
