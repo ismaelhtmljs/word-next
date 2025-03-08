@@ -6,6 +6,17 @@
     background-color: #3fac21;
 }
 
+.txt-responsive-devbug-active{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.txt-responsive-devbug{
+    display: none;
+}
+
 @keyframes mainAnimated {
     from {
         opacity: 0;
